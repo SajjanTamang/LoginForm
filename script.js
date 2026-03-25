@@ -39,12 +39,3 @@ toggleRegister.addEventListener("click", () => {
 });
 
 
-const sound = document.getElementById("clickSound");
-
-document.querySelectorAll("button, .social-icons a, .password-box i")
-.forEach(el => {
-    el.addEventListener("click", () => {
-        sound.currentTime = 0;
-        sound.play();
-    });
-});
